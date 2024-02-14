@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Exercise 2 HTML</title>
+    <style>
+        .flex-column {
+            display: flex;
+            border-width: 1px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .flex-row {
+            display: flex;
+            border-width: 1px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .flex-footer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .flex-itemfooter {
+            height: 90px;
+            width: 100px;
+            border-width: 1px;
+        }
+
+        .flex-item {
+            height: 200px;
+            width: 100px;
+            border-style: solid;
+            border-width: 1px;
+            margin: 15px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #previous_projects{
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <div>
+    <img scr="shock.png" class="center" style="height: 50px;
+    width: 200px;">
+    <h2><center>Logo and Navigation Bar</center></h2>
+    </div>
+    <hr />
+
+    <!-- FEATURED PHOTO -->
+    <h2><center>Featured Photo</center></h2>
+    <img scr="shock.png" class="center" style="height: 400px;
+    width:60%;">
+
+    <h2><center>Previous Projects</center></h2>
+    <div class="flex-column" id="previous_projects">
+        <div class="flex-item" style="flex:1;">
+          <h4>project 1</h4>
+          <p>wertghjkjsdasdasdhasdsd</p></div>
+        <div class="flex-item" style="flex:1;">
+          <h4>project 2</h4>
+          <p>wertghjkjsdasdasdhasdsd</div>
+        <div class="flex-item" style="flex:1;">
+          <h4>project 3</h4>
+          <p>wertghjkjsdasdasdhasdsd</div>
+        <div class="flex-item" style="flex:1;">
+          <h4>project 4</h4>
+          <p>wertghjkjsdasdasdhasdsd</div>
+    </div>
+
+    <!-- SKILLS AND AUTOBIOGRAPHY-->
+    <div class="flex-column" style="margin-top: 30px;">
+      <div class="flex-item" style="flex:1;">
+        <h2><center>Skills</center></h2>
+        <p>wertghjkjsdasdasdhasdsd</p></div>
+        <div class="flex-item" style="flex:1;">
+          <h2><center>Autobiography</center></h2>
+          <p>wertghjkjsdasdasdhasdsd</p></div>
+    </div>
+
+    <!-- FOOTER -->
+    <hr/>
+    <div class="flex-column" id="footer">
+      <div class="flex-itemfooter" style="flex:1;">image</div>
+      <div class="flex-itemfooter" style="flex:3;">
+        Footer<br>
+        Logo, Address / Contact Information, and Personal Website<br>
+        Copyright Information
+      </div>
+    </div>
+  </body>
+</html>
