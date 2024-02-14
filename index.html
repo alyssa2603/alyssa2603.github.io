@@ -2,109 +2,140 @@
 
 <html>
   <head>
-    <title>Exercise 2 HTML</title>
+    <title>HTML</title>
     <style>
-        .flex-column {
-            display: flex;
-            border-width: 1px;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: baseline;
+
+        h2 {
+            font-family: 'Segoe UI';
         }
 
-        .flex-row {
-            display: flex;
-            border-width: 1px;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: baseline;
+        h3{
+            font-family: 'Segoe UI';
+            line-height: 18px;
+            text-align: center;
+        }
+        p{
+            font-family: Verdana;
+            font-size: 13px;
+            text-align: center;
+        }
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
         }
 
-        .flex-footer {
+        .flex-container {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+            border-style: dotted;
+            /* flex-wrap: wrap; */
             justify-content: space-evenly;
             align-items: baseline;
-        }
-
-        .flex-itemfooter {
-            height: 90px;
-            width: 100px;
-            border-width: 1px;
         }
 
         .flex-item {
-            height: 200px;
-            width: 100px;
-            border-style: solid;
+            border-style: dotted;
             border-width: 1px;
-            margin: 15px;
+            font-size: 16px;
         }
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .nav-items{
+            font-family: Verdana;
+            padding: 3%;
+        }
+        
+        #headerFooter{
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            height: 70px;
+            background-color: blanchedalmond;
+        }
+        .project_item{
+            height: 150px;
+            width: 150px;
+            margin: 10px;
         }
 
-        #previous_projects{
+        .skill-item{
+            margin: 10px;
+            width: 32%;
+            height: 200px;
+            padding: 10px;
+        }
+
+        #previous_projects {
+            height: 180px;
+            margin: 10px;
         }
 
     </style>
-  </head>
+    </head>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <div>
-    <img scr="shock.png" class="center" style="height: 50px;
-    width: 200px;">
-    <h2><center>Logo and Navigation Bar</center></h2>
-    </div>
-    <hr />
+    <body>
+        <!-- HEADER -->
+       <div class="flex-container" id="headerFooter" >
+            <div class="flex-item" id="navlogo" style="flex:1 ; height:60px; width: 100px;">
+            <img src="logo.png" class="center" style="width: 60px">
+            </div>
+            <div class="flex-item" style="flex:2" ></div>
+            <div class="flex-item" style="flex:1" >
+                <a class="nav-items" href="#home">Home</a>
+                <a class="nav-items" href="#contact">Contact</a>
+                <a class="nav-items" href="#about">About</a></div>
+        </div>
 
-    <!-- FEATURED PHOTO -->
-    <h2><center>Featured Photo</center></h2>
-    <img scr="shock.png" class="center" style="height: 400px;
-    width:60%;">
+        <!-- FEATURED PHOTO -->
+        <div id="featured_photo">
+            <h2><center>Featured Photo</center></h2>
+            <img src="cat.jpg" class="center" style="width:500px">
+        </div>
 
-    <h2><center>Previous Projects</center></h2>
-    <div class="flex-column" id="previous_projects">
-        <div class="flex-item" style="flex:1;">
-          <h4>project 1</h4>
-          <p>wertghjkjsdasdasdhasdsd</p></div>
-        <div class="flex-item" style="flex:1;">
-          <h4>project 2</h4>
-          <p>wertghjkjsdasdasdhasdsd</div>
-        <div class="flex-item" style="flex:1;">
-          <h4>project 3</h4>
-          <p>wertghjkjsdasdasdhasdsd</div>
-        <div class="flex-item" style="flex:1;">
-          <h4>project 4</h4>
-          <p>wertghjkjsdasdasdhasdsd</div>
-    </div>
+        <!-- PREVIOUS PROJECTS -->
+        <h2 style="padding-top: 30px;"><center>Previous Projects</center></h2>
+        <div class="flex-container" id="previous_projects">
+            <div class="flex-item project_item">
+                <h3 class="center">Library</h3>
+                <p>Terminal-based simple book management system coded in Python.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">Typing Game</h3>
+                <p>Terminal typing game coded in Python.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">SQL</h3>
+                <p>We were tasked to select, edit, and delete data for our course in Statistical Packages.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">Maze Game</h3>
+                <p>It was a laboratory project for our course in Object Oriented Programming, coded in Java.</p>
+            </div>
+        </div>
 
-    <!-- SKILLS AND AUTOBIOGRAPHY-->
-    <div class="flex-column" style="margin-top: 30px;">
-      <div class="flex-item" style="flex:1;">
-        <h2><center>Skills</center></h2>
-        <p>wertghjkjsdasdasdhasdsd</p></div>
-        <div class="flex-item" style="flex:1;">
-          <h2><center>Autobiography</center></h2>
-          <p>wertghjkjsdasdasdhasdsd</p></div>
-    </div>
+        <!-- SKILLS AND AUTOBIOGRAPHY -->
+        <div class="flex-container" id="skillAndAuto" style="height: 200px;">
+            <div class="flex-item skill-item" id="skills">
+                <h2 class="center">Skills</h2>
+                <p>I can have various skills in arts and design, coding, and basic statistical analysis. I am a beginner programmer
+                     with some experience with the following: Python, C, Java, Javascript, R, SAS, Stata, HTML and CSS.
+                </p>
+            </div>
+            <div class="flex-item skill-item" id="autibiography">
+                <h2 class="center">Autobiography</h2>
+                <p>I was born and raised in Naga City, Bicol. I grew up interested in the field of arts and mathematics.
+                    I am currently studying BS Computer Science in UPLB.
+                </p>
+            </div>
+        </div>
 
-    <!-- FOOTER -->
-    <hr/>
-    <div class="flex-column" id="footer">
-      <div class="flex-itemfooter" style="flex:1;">image</div>
-      <div class="flex-itemfooter" style="flex:3;">
-        Footer<br>
-        Logo, Address / Contact Information, and Personal Website<br>
-        Copyright Information
-      </div>
-    </div>
-  </body>
+        <!-- DIV FOOTER -->
+        <div class="flex-container" id="headerFooter" style="margin-top: 60px;">
+            <div class="flex-item" style="flex:1;">
+                <img src="logo.png" class="center" style="width: 60px"></div>
+            <div class="flex-item" style="flex:3;">
+              <p>University of the Philippines, Los Banos, Laguna<br>
+              Alyssa F. Cea | CMSC 100 | U5L</p>
+            </div>
+          </div>
+    </body>
 </html>
