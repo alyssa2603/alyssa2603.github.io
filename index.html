@@ -3,20 +3,32 @@
 <html>
   <head>
     <title>HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@100..900&family=Silkscreen&display=swap" rel="stylesheet">
     <style>
 
+        body{
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #F1FADA;
+        }
+
         h2 {
-            font-family: 'Segoe UI';
+            font-family: 'Silkscreen';
+            color:#293239;
         }
 
         h3{
-            font-family: 'Segoe UI';
+            font-family: 'Fira Mono';
+            font-weight: 10px;
             line-height: 18px;
+            color:#293239;
             text-align: center;
         }
         p{
-            font-family: Verdana;
+            font-family: 'Fira Mono';
             font-size: 13px;
+            color:#293239;
             text-align: center;
         }
         .center {
@@ -27,31 +39,40 @@
 
         .flex-container {
             display: flex;
-/*             border-style: dotted; */
-            /* flex-wrap: wrap; */
             justify-content: space-evenly;
             align-items: baseline;
         }
 
         .flex-item {
-/*             border-style: dotted; */
             border-width: 1px;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .nav-items{
-            font-family: Verdana;
+            font-family: 'Inter';
+            color: #F1FADA;
             padding: 3%;
         }
         
+        #skillAndAuto{
+            background-color: #5f6f9e;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
         #headerFooter{
             align-items: center;
+            color: #F1FADA;
             padding-left: 10%;
             padding-right: 10%;
             height: 70px;
-            background-color: blanchedalmond;
+            background-color:#265073;
         }
         .project_item{
+            border-radius: 10px;
+            background-color: #9090c1;
+            padding: 5px;
             height: 150px;
             width: 150px;
             margin: 10px;
@@ -67,6 +88,7 @@
         #previous_projects {
             height: 180px;
             margin: 10px;
+            color:#F1FADA;
         }
 
     </style>
@@ -76,9 +98,10 @@
         <!-- HEADER -->
        <div class="flex-container" id="headerFooter" >
             <div class="flex-item" id="navlogo" style="flex:1 ; height:60px; width: 100px;">
-            <img src="logo.png" class="center" style="width: 60px">
+            <img src="logo.png" class="center" style="width: 60px; border-radius: 50%;">
             </div>
-            <div class="flex-item" style="flex:2" ></div>
+            <div class="flex-item" style="flex:2">
+                <h2 style="color: #F1FADA;"><center>* ALYSSA'S PORTFOLIO *</center></h2></div>
             <div class="flex-item" style="flex:1" >
                 <a class="nav-items" href="#home">Home</a>
                 <a class="nav-items" href="#contact">Contact</a>
@@ -88,7 +111,7 @@
         <!-- FEATURED PHOTO -->
         <div id="featured_photo">
             <h2><center>Featured Photo</center></h2>
-            <img src="cat.jpg" class="center" style="width:500px">
+            <img src="cat.jpg" class="center" style="width:500px; border-radius: 120px 20px 120px 20px;">
         </div>
 
         <!-- PREVIOUS PROJECTS -->
@@ -116,25 +139,25 @@
         <div class="flex-container" id="skillAndAuto" style="height: 200px;">
             <div class="flex-item skill-item" id="skills">
                 <h2><center>Skills</center></h2>
-                <p>I can have various skills in arts and design, coding, and basic statistical analysis. I am a beginner programmer
-                     with some experience with the following: Python, C, Java, Javascript, R, SAS, Stata, HTML and CSS.
+                <p>I can have various skills in arts and design, coding, and basic statistical analysis. I
+                     have some experience with the following: Python, C, Java, Javascript, R, SAS, Stata, HTML and CSS.
                 </p>
             </div>
-            <div class="flex-item skill-item" id="autibiography">
+            <div class="flex-item skill-item" id="autobiography">
                 <h2><center>Autobiography</center></h2>
-                <p>I was born and raised in Naga City, Bicol. I grew up interested in the field of arts and mathematics.
+                <p>I am Alyssa Cea, born and raised in Naga City Bicol. I grew up interested in the field of arts and mathematics.
                     I am currently studying BS Computer Science in UPLB.
                 </p>
             </div>
         </div>
 
         <!-- DIV FOOTER -->
-        <div class="flex-container" id="headerFooter" style="margin-top: 60px;">
+        <div class="flex-container" id="headerFooter" style="margin-top: 0px;">
             <div class="flex-item" style="flex:1;">
-                <img src="logo.png" class="center" style="width: 60px"></div>
+                <img src="logo.png" class="center" style="width: 60px ; border-radius: 50%;"></div>
             <div class="flex-item" style="flex:3;">
-              <p>University of the Philippines, Los Banos, Laguna<br>
-              Alyssa F. Cea | CMSC 100 | U5L</p>
+              <p class="nav-items" style="font-size: 14px;">Alyssa F. Cea | CMSC 100 | U5L
+                <br>University of the Philippines, Los Banos, Laguna</p>
             </div>
           </div>
     </body>
