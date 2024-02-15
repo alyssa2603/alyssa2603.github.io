@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@100..900&family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #F1FADA;
+        }
+
+        h2 {
+            font-family: 'Silkscreen';
+            color:#293239;
+        }
+
+        h3{
+            font-family: 'Fira Mono';
+            font-weight: 10px;
+            line-height: 18px;
+            color:#293239;
+            text-align: center;
+        }
+        p{
+            font-family: 'Fira Mono';
+            font-size: 13px;
+            color:#293239;
+            text-align: center;
+        }
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .flex-item {
+            border-width: 1px;
+            font-size: 15px;
+        }
+
+        .nav-items{
+            font-family: 'Inter';
+            color: #F1FADA;
+            padding: 3%;
+        }
+        
+        #skillAndAuto{
+            background-color: #5f6f9e;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #headerFooter{
+            align-items: center;
+            color: #F1FADA;
+            padding-left: 10%;
+            padding-right: 10%;
+            height: 70px;
+            background-color:#265073;
+        }
+        .project_item{
+            border-radius: 10px;
+            background-color: #8f92cd;
+            border-style: solid;
+            border-color: #5f6f9e;
+            border-width: 2px;
+            padding: 8px;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+
+        .skill-item{
+            border-radius: 120px 20px 120px 20px;
+            border-style: solid;
+            border-color: #8596c9;
+            margin: 10px;
+            width: 32%;
+            height: 200px;
+            padding: 10px;
+        }
+
+        #previous_projects {
+            height: 180px;
+            margin: 10px;
+            color:#F1FADA;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+       <div class="flex-container" id="headerFooter" >
+            <div class="flex-item" id="navlogo" style="flex:1 ; height:60px; width: 100px;">
+            <img src="logo.png" class="center" style="width: 60px; border-radius: 50%;">
+            </div>
+            <div class="flex-item" style="flex:2">
+                <h2 style="color: #F1FADA;"><center>* ALYSSA'S PORTFOLIO *</center></h2></div>
+            <div class="flex-item" style="flex:1" >
+                <a class="nav-items" href="#home">Home</a>
+                <a class="nav-items" href="#contact">Contact</a>
+                <a class="nav-items" href="#about">About</a></div>
+        </div>
+
+        <!-- FEATURED PHOTO -->
+        <div id="featured_photo">
+            <h2><center>Featured Photo</center></h2>
+            <img src="cat.jpg" class="center" style="width:500px; border-radius: 120px 20px 120px 20px;">
+        </div>
+
+        <!-- PREVIOUS PROJECTS -->
+        <h2 style="padding-top: 30px;"><center>Previous Projects</center></h2>
+        <div class="flex-container" id="previous_projects">
+            <div class="flex-item project_item">
+                <h3 class="center">Library</h3>
+                <p>Terminal-based simple book management system coded in Python.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">Typing Game</h3>
+                <p>Terminal typing game coded in Python.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">SQL</h3>
+                <p>We were tasked to select, edit, and delete data for our course in Statistical Packages.</p>
+            </div>
+            <div class="flex-item project_item">
+                <h3 class="center">Maze Game</h3>
+                <p>It was a laboratory project for our course in Object Oriented Programming, coded in Java.</p>
+            </div>
+        </div>
+
+        <!-- SKILLS AND AUTOBIOGRAPHY -->
+        <div class="flex-container" id="skillAndAuto" style="height: 200px;">
+            <div class="flex-item skill-item" id="skills">
+                <h2><center>Skills</center></h2>
+                <p>I can have various skills in arts and design, coding, and basic statistical analysis. I
+                     have some experience with the following: Python, C, Java, Javascript, R, SAS, Stata, HTML and CSS.
+                </p>
+            </div>
+            <div class="flex-item skill-item" id="autobiography">
+                <h2><center>Autobiography</center></h2>
+                <p>I am Alyssa Cea, born and raised in Naga City Bicol. I grew up interested in the field of arts and mathematics.
+                    I am currently studying BS Computer Science in UPLB.
+                </p>
+            </div>
+        </div>
+
+        <!-- DIV FOOTER -->
+        <div class="flex-container" id="headerFooter" style="margin-top: 0px;">
+            <div class="flex-item" style="flex:1;">
+                <img src="logo.png" class="center" style="width: 60px ; border-radius: 50%;"></div>
+            <div class="flex-item" style="flex:3;">
+              <p class="nav-items" style="font-size: 14px;">Alyssa F. Cea | CMSC 100 | U5L
+                <br>University of the Philippines, Los Banos, Laguna</p>
+            </div>
+          </div>
+    </body>
+</html>
